@@ -1,6 +1,6 @@
-const form = document.getElementById("customForm");
+//const form = document.getElementById("customForm");
 
-form.addEventListener("submit", onFormSubmit);
+//form.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
 	 alert("The form has been submitted");
