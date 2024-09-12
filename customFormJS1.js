@@ -11,7 +11,7 @@ if(window.opener){
   // Open a new child pop-upwindow
 	 window.onload = function() {
      window.childPopup = window.open('', '_blank', 'width=700,height=700');
-	 childPopup.document.write('<html>' + document.documentElement.innerHTML +'</html>');
+	 childPopup.document.write('<html>' + form.innerHTML +'</html>');
 	 //console.log(parentDivContent.innerHTML);
 	 childPopup.document.close();
     };
