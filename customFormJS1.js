@@ -6,6 +6,7 @@ const childElementExists = document.getElementById("childDiv");
 console.log(childElementExists);
 console.log(window.opener);
 console.log(window.opener.opener);
+console.log(parentDivContent);
 if(window.opener){
   // Open a new child pop-upwindow
 	 window.onload = function() {
