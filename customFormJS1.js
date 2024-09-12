@@ -4,7 +4,8 @@ const parentDivContent=document.getElementById('parentDiv');
 const form = document.getElementById('customForm');
 const childElementExists = document.getElementById("childDiv");
 console.log(childElementExists);
-
+console.log(window.opener);
+console.log(window.opener.opener);
 if(window.opener){
   // Open a new child pop-upwindow
 	 window.onload = function() {
