@@ -5,7 +5,7 @@ const form = document.getElementById('customForm');
 const childElementExists = document.getElementById("childDiv");
 console.log(childElementExists);
 
-if(!window.opener){
+if(window.opener){
   // Open a new child pop-upwindow
 	 window.onload = function() {
      window.childPopup = window.open('', '_blank', 'width=700,height=700');
@@ -51,9 +51,9 @@ function onFormSubmit(event) {
 		 //window.close();
 		 
 		 // Ensure that Page 2 is still open and accessible
-      if (window.opener && !window.opener.closed) {
+      if (window.opener.opener && !window.opener.opener.closed) {
         // Call a function in Page 2 to submit the form with the data from Page 3
-        window.opener.submitPage2Form(data);
+        window.opener.opener.submitPage2Form(data);
 
         // Optionally close the pop-up after submission
         window.close();
