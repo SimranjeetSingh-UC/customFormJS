@@ -1,3 +1,12 @@
+if (window.opener === null) {
+  // Open a new window with specific size and settings (this is the popup)
+  const newWindow = window.open(window.location.href, 'popupWindow', 'width=800,height=600');
+  
+  // Close the current tab (optional, to keep only the popup)
+  
+}
+
+
 const form = document.getElementById("customForm");
 form.addEventListener("submit", onFormSubmit);
 	
@@ -17,4 +26,5 @@ function onFormSubmit(event) {
 	
 	 //alert("The form has been submitted");
 	 event.preventDefault();
+	 window.close();
 }
