@@ -14,12 +14,13 @@ if(window.opener){
 	 childPopup.document.write('<html>' + form.innerHTML +'</html>');
 	 //console.log(parentDivContent.innerHTML);
 	 childPopup.document.close();
+	
+    };
 	if (!handle) {
 	  // The window wasn't allowed to open
 	  // This is likely caused by built-in popup blockers.
 	  alert("pop-up has been blocked");
 	}
-    };
 	console.log("Child pop-up opened");  
   // Close the current tab (optional, to keep only the popup)
   
